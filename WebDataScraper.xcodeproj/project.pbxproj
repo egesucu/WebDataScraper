@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D69CB3C2825B75000D9D753 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D69CB3B2825B75000D9D753 /* Date+Extensions.swift */; };
 		9DB86044282561E800B58A9A /* WebDataScraperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB86043282561E800B58A9A /* WebDataScraperApp.swift */; };
-		9DB86046282561E800B58A9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB86045282561E800B58A9A /* ContentView.swift */; };
+		9DB86046282561E800B58A9A /* ArticleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB86045282561E800B58A9A /* ArticleListView.swift */; };
 		9DB86048282561E800B58A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB86047282561E800B58A9A /* Assets.xcassets */; };
 		9DB8604B282561E800B58A9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8604A282561E800B58A9A /* Preview Assets.xcassets */; };
+		9DB860532825620E00B58A9A /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 9DB860522825620E00B58A9A /* SwiftSoup */; };
+		9DB860552825621A00B58A9A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860542825621A00B58A9A /* DataService.swift */; };
+		9DB860572825688A00B58A9A /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB860562825688A00B58A9A /* Article.swift */; };
+		9DB8605928257BE600B58A9A /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8605828257BE600B58A9A /* ArticleCell.swift */; };
+		9DED36932826630500B9FE76 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED36922826630500B9FE76 /* DateFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D69CB3B2825B75000D9D753 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		9DB86040282561E800B58A9A /* WebDataScraper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebDataScraper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB86043282561E800B58A9A /* WebDataScraperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDataScraperApp.swift; sourceTree = "<group>"; };
-		9DB86045282561E800B58A9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9DB86045282561E800B58A9A /* ArticleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListView.swift; sourceTree = "<group>"; };
 		9DB86047282561E800B58A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB8604A282561E800B58A9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9DB860542825621A00B58A9A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		9DB860562825688A00B58A9A /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		9DB8605828257BE600B58A9A /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		9DED36922826630500B9FE76 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB860532825620E00B58A9A /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				9DB86043282561E800B58A9A /* WebDataScraperApp.swift */,
-				9DB86045282561E800B58A9A /* ContentView.swift */,
+				9DB860542825621A00B58A9A /* DataService.swift */,
+				9DB860562825688A00B58A9A /* Article.swift */,
+				9DB86045282561E800B58A9A /* ArticleListView.swift */,
+				9D69CB3B2825B75000D9D753 /* Date+Extensions.swift */,
+				9DED36922826630500B9FE76 /* DateFormatter+Extensions.swift */,
+				9DB8605828257BE600B58A9A /* ArticleCell.swift */,
 				9DB86047282561E800B58A9A /* Assets.xcassets */,
 				9DB86049282561E800B58A9A /* Preview Content */,
 			);
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = WebDataScraper;
+			packageProductDependencies = (
+				9DB860522825620E00B58A9A /* SwiftSoup */,
+			);
 			productName = WebDataScraper;
 			productReference = 9DB86040282561E800B58A9A /* WebDataScraper.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 9DB86037282561E800B58A9A;
+			packageReferences = (
+				9DB860512825620E00B58A9A /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 9DB86041282561E800B58A9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB86046282561E800B58A9A /* ContentView.swift in Sources */,
+				9DB860572825688A00B58A9A /* Article.swift in Sources */,
+				9DB860552825621A00B58A9A /* DataService.swift in Sources */,
+				9DED36932826630500B9FE76 /* DateFormatter+Extensions.swift in Sources */,
+				9DB86046282561E800B58A9A /* ArticleListView.swift in Sources */,
+				9DB8605928257BE600B58A9A /* ArticleCell.swift in Sources */,
 				9DB86044282561E800B58A9A /* WebDataScraperApp.swift in Sources */,
+				9D69CB3C2825B75000D9D753 /* Date+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DB860512825620E00B58A9A /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DB860522825620E00B58A9A /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DB860512825620E00B58A9A /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DB86038282561E800B58A9A /* Project object */;
 }
