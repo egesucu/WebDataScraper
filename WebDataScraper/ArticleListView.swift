@@ -99,8 +99,8 @@ struct ArticleListView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ArticleListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ArticleListView()
     }
 }
